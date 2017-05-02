@@ -16,7 +16,6 @@ buildscript {
 
 def libVersion = "0.0.1"
 
-
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -79,3 +78,7 @@ ext {
     licenseUrl = 'https://github.com/Tubitv/ZendeskHelpCenter/blob/master/LICENSE'
     allLicenses = ["MIT"]
 }
+
+
+apply from: 'https://raw.githubusercontent.com/Tubitv/BintrayGradle/master/install.gradle'
+apply from: 'https://raw.githubusercontent.com/Tubitv/BintrayGradle/master/bintray.gradle'
