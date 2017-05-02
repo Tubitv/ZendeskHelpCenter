@@ -76,6 +76,6 @@ ext {
     developerEmail = 'support@tubitv.com'
 
     licenseName = 'MIT'
-    licenseUrl = 'https://github.com/Tubitv/TubiLoadingView/blob/master/LICENSE'
+    licenseUrl = 'https://github.com/Tubitv/ZendeskHelpCenter/blob/master/LICENSE'
     allLicenses = ["MIT"]
 }
