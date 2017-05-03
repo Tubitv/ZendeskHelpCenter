@@ -5,7 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.tubitv.tools.UrlToFileUtil;
 import com.tubitv.tools.logic.ZendeskHelpCenter;
+
+import static com.tubitv.tools.UrlToFileUtil.permissions;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -16,13 +19,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        permissions(this);
         mFetch = (Button) findViewById(R.id.button_fetch);
         mDisplay = (Button) findViewById(R.id.button_display);
         mFetch.setOnClickListener(this);
         mDisplay.setOnClickListener(this);
 
         new ZendeskHelpCenter();
+        UrlToFileUtil.writeToFile("{stuff}", this);
     }
 
 
