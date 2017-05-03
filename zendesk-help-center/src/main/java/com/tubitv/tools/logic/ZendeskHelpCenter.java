@@ -5,6 +5,8 @@ import android.util.Log;
 
 import com.tubitv.tools.RetrofitManager;
 import com.tubitv.tools.ZendeskApiInterface;
+import com.tubitv.tools.api.ZendeskArticle;
+import com.tubitv.tools.api.ZendeskArticles;
 import com.tubitv.tools.api.ZendeskCategories;
 import com.tubitv.tools.api.ZendeskCategory;
 import com.tubitv.tools.api.ZendeskSection;
@@ -15,6 +17,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executor;
 
 import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
@@ -61,7 +65,7 @@ public class ZendeskHelpCenter {
     }
 
 
-    private void getSections(){
+    private void getSections() {
 
         //get the categories
         mApiInterface.listCategories().flatMap(new Function<ZendeskCategories, ObservableSource<ZendeskCategory>>() {
@@ -83,17 +87,31 @@ public class ZendeskHelpCenter {
 
                 return Observable.fromIterable(sections.getSections());
             }
+        }).flatMap(new Function<ZendeskSection, ObservableSource<ZendeskArticles>>() {
+            @Override
+            public ObservableSource<ZendeskArticles> apply(@io.reactivex.annotations.NonNull ZendeskSection zendeskSection) throws Exception {
+
+                return mApiInterface.listArticles(zendeskSection.getId());
+            }
+        }).flatMap(new Function<ZendeskArticles, ObservableSource<ZendeskArticle>>() {
+            @Override
+            public ObservableSource<ZendeskArticle> apply(@io.reactivex.annotations.NonNull ZendeskArticles zendeskArticles) throws Exception {
+
+                return Observable.fromIterable(zendeskArticles.getArticles());
+            }
         })
+
+
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<ZendeskSection>() {
+                .subscribe(new Consumer<ZendeskArticle>() {
                     @Override
-                    public void accept(@io.reactivex.annotations.NonNull ZendeskSection section) throws Exception {
+                    public void accept(@io.reactivex.annotations.NonNull ZendeskArticle article) throws Exception {
 
-                        Log.i("ZendeskHelpCenter", section.getName());
+                        Log.i("ZendeskHelpCenter", article.getBody());
 
 
-                        Log.i("ZendeskHelpCenter", Thread.currentThread()+"");
+                        Log.i("ZendeskHelpCenter", Thread.currentThread()+"" + "\n" +"\n");
                     }
                 });
 
@@ -203,12 +221,16 @@ public class ZendeskHelpCenter {
 //    }
 
 
-//    public Observable<ZendeskSections> getSections(final int categoryId) {
-//
-//        return Observable.create((emitter) -> {
-//            mApiInterface.listSections(categoryId);
-//        });
-//    }
+    public Observable<ZendeskSections> getSections(final int categoryId) {
+
+        return Observable.create(new ObservableOnSubscribe<ZendeskSections>() {
+            @Override
+            public void subscribe(@io.reactivex.annotations.NonNull ObservableEmitter<ZendeskSections> e) throws Exception {
+
+                mApiInterface.listSections(categoryId);
+            }
+        });
+    }
 
 //    publiclic void test2(){
 //
@@ -236,7 +258,7 @@ public class ZendeskHelpCenter {
 //
 //            }
 //        });
-    }
+}
 
 
 
