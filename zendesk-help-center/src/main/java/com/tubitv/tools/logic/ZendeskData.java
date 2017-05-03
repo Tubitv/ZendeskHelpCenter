@@ -6,6 +6,7 @@ import com.tubitv.tools.api.SupportCategory;
 import com.tubitv.tools.api.SupportSection;
 import com.tubitv.tools.api.SupportSections;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -34,13 +35,13 @@ public class ZendeskData {
         }
     }
 
-    public void setArticles(SupportArticles articles){
+    public void setArticles(SupportArticles articles) {
         SupportCategory category = mMap.get(articles.getCategoryId());
 
-        if(category != null && category.getSectionList() != null){
-            List<SupportSection> sections =  category.getSectionList();
-            for(SupportSection section : sections){
-                if(section.getId() == articles.getSectionId()){
+        if (category != null && category.getSectionList() != null) {
+            List<SupportSection> sections = category.getSectionList();
+            for (SupportSection section : sections) {
+                if (section.getId() == articles.getSectionId()) {
                     section.setArticlesList(articles.getArticles());
                     break;
                 }
@@ -48,7 +49,17 @@ public class ZendeskData {
         }
     }
 
-    public int getSize(){
+    public int getSize() {
         return mMap.keySet().size();
+    }
+
+    public List<SupportCategory> toList() {
+        List<SupportCategory> categories = new ArrayList<>(mMap.keySet().size());
+        for (Long key : mMap.keySet()) {
+            categories.add(mMap.get(key));
+        }
+
+        return categories;
+
     }
 }

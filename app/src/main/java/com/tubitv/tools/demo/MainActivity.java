@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.tubitv.tools.UrlToFileUtil;
 import com.tubitv.tools.logic.ZendeskHelpCenter;
 
 import static com.tubitv.tools.UrlToFileUtil.permissions;
@@ -25,8 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mFetch.setOnClickListener(this);
         mDisplay.setOnClickListener(this);
 
-        new ZendeskHelpCenter();
-        UrlToFileUtil.writeToFile("{stuff}", this);
+        new ZendeskHelpCenter(this);
     }
 
 

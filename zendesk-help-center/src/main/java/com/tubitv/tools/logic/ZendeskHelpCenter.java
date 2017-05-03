@@ -1,9 +1,12 @@
 package com.tubitv.tools.logic;
 
+import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
+import com.google.gson.Gson;
 import com.tubitv.tools.RetrofitManager;
+import com.tubitv.tools.UrlToFileUtil;
 import com.tubitv.tools.ZendeskApiInterface;
 import com.tubitv.tools.api.SupportArticle;
 import com.tubitv.tools.api.SupportArticles;
@@ -30,11 +33,12 @@ public class ZendeskHelpCenter {
     private static final String BASE_URL = "https://help.tubitv.com/api/v2/help_center/en-us/";
 
    private ZendeskData mData = new ZendeskData();
-
+   private Activity mActivity;
     @NonNull
     private ZendeskApiInterface mApiInterface;
 
-    public ZendeskHelpCenter() {
+    public ZendeskHelpCenter(Activity activity) {
+        mActivity = activity;
         Retrofit retrofit = RetrofitManager.getBuilder(BASE_URL);
         mApiInterface = retrofit.create(ZendeskApiInterface.class);
 //        getAndPutCategories();
@@ -90,6 +94,7 @@ public class ZendeskHelpCenter {
 
                         Log.v("ZendeskHelpCenter", "do finally");
                         Log.v("ZendeskHelpCenter", "Got " + mData.getSize() + " categories");
+                        toFile();
                     }
                 })
                 .subscribe(new Consumer<SupportArticle>() {
@@ -102,6 +107,11 @@ public class ZendeskHelpCenter {
                     }
                 });
 
+    }
+
+    private void toFile(){
+
+        UrlToFileUtil.writeToFile(new Gson().toJson(mData.toList()), mActivity);
     }
 
 }
