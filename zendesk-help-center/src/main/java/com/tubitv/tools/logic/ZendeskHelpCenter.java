@@ -12,9 +12,6 @@ import com.tubitv.tools.api.SupportCategory;
 import com.tubitv.tools.api.SupportSection;
 import com.tubitv.tools.api.SupportSections;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.functions.Action;
@@ -32,7 +29,7 @@ public class ZendeskHelpCenter {
 
     private static final String BASE_URL = "https://help.tubitv.com/api/v2/help_center/en-us/";
 
-    private Map<Long, SupportCategory> mMap = new ConcurrentHashMap<>();
+   private ZendeskData mData = new ZendeskData();
 
     @NonNull
     private ZendeskApiInterface mApiInterface;
@@ -51,7 +48,7 @@ public class ZendeskHelpCenter {
         mApiInterface.listCategories().flatMap(new Function<SupportCategories, ObservableSource<SupportCategory>>() {
             @Override
             public ObservableSource<SupportCategory> apply(@io.reactivex.annotations.NonNull SupportCategories supportCategories) throws Exception {
-
+                mData.setCategories(supportCategories);
                 //ommit to category
                 return Observable.fromIterable(supportCategories.getCategories()).subscribeOn(Schedulers.newThread());
             }
@@ -64,7 +61,7 @@ public class ZendeskHelpCenter {
         }).flatMap(new Function<SupportSections, ObservableSource<SupportSection>>() {
             @Override
             public ObservableSource<SupportSection> apply(@io.reactivex.annotations.NonNull final SupportSections sections) throws Exception {
-
+                mData.setSections(sections);
                 return Observable.fromIterable(sections.getSections()).subscribeOn(Schedulers.newThread());
             }
         }).flatMap(new Function<SupportSection, ObservableSource<SupportArticles>>() {
@@ -82,6 +79,7 @@ public class ZendeskHelpCenter {
         }).flatMap(new Function<SupportArticles, ObservableSource<SupportArticle>>() {
             @Override
             public ObservableSource<SupportArticle> apply(@io.reactivex.annotations.NonNull SupportArticles supportArticles) throws Exception {
+                mData.setArticles(supportArticles);
                 return Observable.fromIterable(supportArticles.getArticles()).subscribeOn(Schedulers.newThread());
             }
         })
@@ -91,6 +89,7 @@ public class ZendeskHelpCenter {
                     public void run() throws Exception {
 
                         Log.v("ZendeskHelpCenter", "do finally");
+                        Log.v("ZendeskHelpCenter", "Got " + mData.getSize() + " categories");
                     }
                 })
                 .subscribe(new Consumer<SupportArticle>() {
@@ -99,145 +98,12 @@ public class ZendeskHelpCenter {
 
                         Log.d("ZendeskHelpCenter", article.getTitle());
                         Log.v("ZendeskHelpCenter", "" + article.getCategoryId());
-//                        Log.i("ZendeskHelpCenter", article.getBody());
-//
-//
                         Log.i("ZendeskHelpCenter", Thread.currentThread() + "" + "\n" + "\n");
                     }
                 });
 
     }
 
-
-//    @Override
-//    public void onResponse(Call<ZendeskCategories> call, Response<ZendeskCategories> response) {
-//        if (response.isSuccessful()) {
-//            ZendeskCategories cats = response.body();
-//            if (cats != null) {
-//                for (ZendeskCategory cat : cats.getCategories()) {
-//                    mData.put(cat.getId(), cat);
-//                    mApiInterface.listSections(cat.getId()).enqueue(getSectionCallback());
-//
-//                }
-//            }
-//        }
-//    }
-//
-//    @Override
-//    public void onFailure(Call<ZendeskCategories> call, Throwable t) {
-//
-//    }
-//
-//    public Callback<ZendeskSections> getSectionCallback() {
-//        return new Callback<ZendeskSections>() {
-//            @Override
-//            public void onResponse(Call<ZendeskSections> call, Response<ZendeskSections> response) {
-//
-//            }
-//
-//            @Override
-//            public void onFailure(Call<ZendeskSections> call, Throwable t) {
-//
-//            }
-//        };
-//    }
-
-//    public interface CallBack {
-//
-//        void onSuccess(ZendeskCategories response);
-//
-//        void onError(Exception exception);
-//    }
-
-
-//    public void fetchData(CallBack callBack) {
-//    }
-
-
-//    public Observable<ZendeskCategories> getCategories() {
-//
-//        return Observable.create(new ObservableOnSubscribe<ZendeskCategories>() {
-//            @Override
-//            public void subscribe(ObservableEmitter<ZendeskCategories> e) throws Exception {
-//                categoriesCall.execute();
-//            }
-//        });
-////        return Observable.create((e) -> {
-////            Response<ZendeskCategories> res = categoriesCall.execute();
-////
-////            if (res.isSuccessful()) {
-////                ZendeskCategories cats = res.body();
-////                if (cats != null) {
-////                    for (ZendeskCategory cat : cats.getCategories()) {
-////                        mData.put(cat.getId(), cat);
-////                    }
-////                }
-////            }
-////        });
-//    }
-
-//    public void getAndPutCategories() {
-//          getCategories().flatMap(new Function<ZendeskCategories, ObservableSource<?>>() {
-//            @Override
-//            public ObservableSource<?> apply(ZendeskCategories zendeskCategories) throws Exception {
-//
-//                return Observable.fromArray(zendeskCategories.getCategories()).doAfterNext((categories)->{
-//
-//                    for(ZendeskCategory category: categories){
-//
-//                        mData.put(category.getId(),category);
-//                    }
-//
-//                });
-//            }
-//        }).subscribeOn(Schedulers.newThread())
-//                 .subscribe(new Consumer<Object>() {
-//
-//             @Override
-//             public void accept(Object o) throws Exception {
-//
-//                 ZendeskCategory category = (ZendeskCategory)o;
-//
-//                 Log.i(TAG, category.getName());
-//             }
-//         });
-
-//                .flatMap((category) -> {
-//
-//            int categoryId = ((ZendeskCategory) category).getId();
-//
-//            return getSections(categoryId);
-//
-//        }).doOnNext(()-> {});
-//    }
-
-
-//    publiclic void test2(){
-//
-//         Observable.create(new ObservableOnSubscribe<ZendeskArticles>() {
-//            @Override
-//            public void subscribe(ObservableEmitter<ZendeskArticles> e) throws Exception {
-//
-//                e.
-//            }
-//        });
-//    }
-
-//
-//    public Observable<ZendeskArticles> getArticles(final int sectionId) {
-//
-//        return Observable.create((emitter) -> mApiInterface.listArticles(sectionId));
-//    }
-
-
-//    public Observable<ZendeskArticles> getArticles(int sectionId) {
-//
-//        return Observable.create(new ObservableOnSubscribe<ZendeskArticles>() {
-//            @Override
-//            public void subscribe(ObservableEmitter<ZendeskArticles> e) throws Exception {
-//
-//            }
-//        });
 }
 
 

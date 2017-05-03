@@ -14,6 +14,7 @@ public class SupportArticles {
     List<SupportArticle> articles;
 
     private long categoryId;
+    private long sectionId;
 
     public long getCategoryId() {
         return categoryId;
@@ -39,5 +40,13 @@ public class SupportArticles {
             }
         }
         return this;
+    }
+
+    public long getSectionId() {
+        if(articles != null && articles.size() > 0){
+            SupportArticle article = articles.get(0);
+            sectionId = article.getSectionId();
+        }
+        return sectionId;
     }
 }

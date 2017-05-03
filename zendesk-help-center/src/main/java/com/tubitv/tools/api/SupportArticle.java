@@ -8,13 +8,18 @@ import com.google.gson.annotations.SerializedName;
 public class SupportArticle {
     private static final String TITLE_KEY = "title";
     private static final String BODY_KEY = "body";
+    private static final String POSITION_KEY = "position";
+    private static final String SECTION_ID_KEY = "section_id";
 
     @SerializedName(TITLE_KEY)
     private String title;
     @SerializedName(BODY_KEY)
     private String body;
-    @SerializedName("position")
+    @SerializedName(POSITION_KEY)
     private int position;
+    @SerializedName(SECTION_ID_KEY)
+    private long sectionId;
+
     private long categoryId;
 
 
@@ -48,6 +53,14 @@ public class SupportArticle {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public long getSectionId() {
+        return sectionId;
+    }
+
+    public void setSectionId(long sectionId) {
+        this.sectionId = sectionId;
     }
 
 

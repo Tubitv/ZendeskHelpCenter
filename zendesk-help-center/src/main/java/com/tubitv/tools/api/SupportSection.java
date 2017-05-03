@@ -8,7 +8,7 @@ import java.util.List;
  * Created by stoyan on 5/2/17.
  */
 public class SupportSection {
-    private static final String TITLE_KEY = "title";
+    private static final String TITLE_KEY = "name";
     private static final String ID_KEY = "id";
     private static final String ARTICLES_KEY = "articles";
     private static final String CATEGORY_ID_KEY = "category_id";
