@@ -9,10 +9,13 @@ import java.util.List;
  */
 public class SupportCategory {
     private static final String PLATFORM_KEY = "platform";
+    private static final String ID_KEY = "id";
     private static final String SECTIONS_KEY = "sections";
 
     @SerializedName(PLATFORM_KEY)
     private String platform;
+    @SerializedName(ID_KEY)
+    private long id;
     @SerializedName(SECTIONS_KEY)
     private List<SupportSection> sectionList;
 
@@ -22,6 +25,14 @@ public class SupportCategory {
 
     public void setPlatform(String platform) {
         this.platform = platform;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public List<SupportSection> getSectionList() {

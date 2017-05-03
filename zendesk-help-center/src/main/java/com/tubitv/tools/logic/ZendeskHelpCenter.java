@@ -5,27 +5,22 @@ import android.util.Log;
 
 import com.tubitv.tools.RetrofitManager;
 import com.tubitv.tools.ZendeskApiInterface;
-import com.tubitv.tools.api.ZendeskArticle;
-import com.tubitv.tools.api.ZendeskArticles;
-import com.tubitv.tools.api.ZendeskCategories;
-import com.tubitv.tools.api.ZendeskCategory;
-import com.tubitv.tools.api.ZendeskSection;
-import com.tubitv.tools.api.ZendeskSections;
+import com.tubitv.tools.api.SupportArticle;
+import com.tubitv.tools.api.SupportArticles;
+import com.tubitv.tools.api.SupportCategories;
+import com.tubitv.tools.api.SupportCategory;
+import com.tubitv.tools.api.SupportSection;
+import com.tubitv.tools.api.SupportSections;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Executor;
 
 import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.ObservableSource;
-import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Action;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Retrofit;
 
 /**
@@ -33,29 +28,14 @@ import retrofit2.Retrofit;
  */
 
 public class ZendeskHelpCenter {
-
+    private static final String TAG = ZendeskHelpCenter.class.getSimpleName();
 
     private static final String BASE_URL = "https://help.tubitv.com/api/v2/help_center/en-us/";
 
-    private static final String TAG = "ZendeskHelpCenter";
+    private Map<Long, SupportCategory> mMap = new ConcurrentHashMap<>();
+
     @NonNull
     private ZendeskApiInterface mApiInterface;
-
-    private Executor mExecutor;
-
-    private Call<ZendeskCategories> categoriesCall;
-
-    private Call<ZendeskSections> sectionsCall;
-
-//    private CallBack myCallback;
-
-    private ZendeskCategories mCategories;
-
-    /**
-     * Map of all the zendesk data that we fetch, the key is the category id
-     */
-    private static Map<Integer, ZendeskCategory> mData = new ConcurrentHashMap<>();
-    private Callback<ZendeskSections> sectionCallback;
 
     public ZendeskHelpCenter() {
         Retrofit retrofit = RetrofitManager.getBuilder(BASE_URL);
@@ -68,50 +48,61 @@ public class ZendeskHelpCenter {
     private void getSections() {
 
         //get the categories
-        mApiInterface.listCategories().flatMap(new Function<ZendeskCategories, ObservableSource<ZendeskCategory>>() {
+        mApiInterface.listCategories().flatMap(new Function<SupportCategories, ObservableSource<SupportCategory>>() {
             @Override
-            public ObservableSource<ZendeskCategory> apply(@io.reactivex.annotations.NonNull ZendeskCategories zendeskCategories) throws Exception {
+            public ObservableSource<SupportCategory> apply(@io.reactivex.annotations.NonNull SupportCategories supportCategories) throws Exception {
 
                 //ommit to category
-                return Observable.fromIterable(zendeskCategories.getCategories());
+                return Observable.fromIterable(supportCategories.getCategories()).subscribeOn(Schedulers.newThread());
             }
-        }).flatMap(new Function<ZendeskCategory, ObservableSource<ZendeskSections>>() {
+        }).flatMap(new Function<SupportCategory, ObservableSource<SupportSections>>() {
             @Override
-            public ObservableSource<ZendeskSections> apply(@io.reactivex.annotations.NonNull ZendeskCategory zendeskCategory) throws Exception {
+            public ObservableSource<SupportSections> apply(@io.reactivex.annotations.NonNull SupportCategory supportCategory) throws Exception {
 
-                return mApiInterface.listSections(zendeskCategory.getId());
+                return mApiInterface.listSections(supportCategory.getId());
             }
-        }).flatMap(new Function<ZendeskSections, ObservableSource<ZendeskSection>>() {
+        }).flatMap(new Function<SupportSections, ObservableSource<SupportSection>>() {
             @Override
-            public ObservableSource<ZendeskSection> apply(@io.reactivex.annotations.NonNull ZendeskSections sections) throws Exception {
+            public ObservableSource<SupportSection> apply(@io.reactivex.annotations.NonNull final SupportSections sections) throws Exception {
 
-                return Observable.fromIterable(sections.getSections());
+                return Observable.fromIterable(sections.getSections()).subscribeOn(Schedulers.newThread());
             }
-        }).flatMap(new Function<ZendeskSection, ObservableSource<ZendeskArticles>>() {
+        }).flatMap(new Function<SupportSection, ObservableSource<SupportArticles>>() {
             @Override
-            public ObservableSource<ZendeskArticles> apply(@io.reactivex.annotations.NonNull ZendeskSection zendeskSection) throws Exception {
+            public ObservableSource<SupportArticles> apply(@io.reactivex.annotations.NonNull final SupportSection supportSection) throws Exception {
 
-                return mApiInterface.listArticles(zendeskSection.getId());
+                return mApiInterface.listArticles(supportSection.getId()).map(new Function<SupportArticles, SupportArticles>() {
+                    @Override
+                    public SupportArticles apply(@io.reactivex.annotations.NonNull SupportArticles supportArticles) throws Exception {
+                        supportArticles.setCategoryId(supportSection.getCategoryId());
+                        return supportArticles.setCategoryIdOnArticles();
+                    }
+                });
             }
-        }).flatMap(new Function<ZendeskArticles, ObservableSource<ZendeskArticle>>() {
+        }).flatMap(new Function<SupportArticles, ObservableSource<SupportArticle>>() {
             @Override
-            public ObservableSource<ZendeskArticle> apply(@io.reactivex.annotations.NonNull ZendeskArticles zendeskArticles) throws Exception {
-
-                return Observable.fromIterable(zendeskArticles.getArticles());
+            public ObservableSource<SupportArticle> apply(@io.reactivex.annotations.NonNull SupportArticles supportArticles) throws Exception {
+                return Observable.fromIterable(supportArticles.getArticles()).subscribeOn(Schedulers.newThread());
             }
         })
-
-
                 .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<ZendeskArticle>() {
+                .doFinally(new Action() {
                     @Override
-                    public void accept(@io.reactivex.annotations.NonNull ZendeskArticle article) throws Exception {
+                    public void run() throws Exception {
 
-                        Log.i("ZendeskHelpCenter", article.getBody());
+                        Log.v("ZendeskHelpCenter", "do finally");
+                    }
+                })
+                .subscribe(new Consumer<SupportArticle>() {
+                    @Override
+                    public void accept(@io.reactivex.annotations.NonNull SupportArticle article) throws Exception {
 
-
-                        Log.i("ZendeskHelpCenter", Thread.currentThread()+"" + "\n" +"\n");
+                        Log.d("ZendeskHelpCenter", article.getTitle());
+                        Log.v("ZendeskHelpCenter", "" + article.getCategoryId());
+//                        Log.i("ZendeskHelpCenter", article.getBody());
+//
+//
+                        Log.i("ZendeskHelpCenter", Thread.currentThread() + "" + "\n" + "\n");
                     }
                 });
 
@@ -220,17 +211,6 @@ public class ZendeskHelpCenter {
 //        }).doOnNext(()-> {});
 //    }
 
-
-    public Observable<ZendeskSections> getSections(final int categoryId) {
-
-        return Observable.create(new ObservableOnSubscribe<ZendeskSections>() {
-            @Override
-            public void subscribe(@io.reactivex.annotations.NonNull ObservableEmitter<ZendeskSections> e) throws Exception {
-
-                mApiInterface.listSections(categoryId);
-            }
-        });
-    }
 
 //    publiclic void test2(){
 //

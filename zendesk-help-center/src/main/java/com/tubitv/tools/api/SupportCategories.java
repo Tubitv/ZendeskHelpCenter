@@ -9,7 +9,17 @@ import java.util.List;
  */
 public class SupportCategories {
 
+
     @SerializedName("categories")
     private List<SupportCategory> categories;
+
+
+    public List<SupportCategory> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<SupportCategory> categories) {
+        this.categories = categories;
+    }
 
 }
