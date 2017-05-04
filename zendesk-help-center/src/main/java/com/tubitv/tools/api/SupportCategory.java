@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by stoyan on 5/2/17.
  */
-public class SupportCategory {
+public class SupportCategory implements android.databinding.Observable {
     private static final String PLATFORM_KEY = "name";
     private static final String ID_KEY = "id";
     private static final String SECTIONS_KEY = "sections";
@@ -64,5 +64,15 @@ public class SupportCategory {
 
     public void setSectionList(List<SupportSection> sectionList) {
         this.sectionList = sectionList;
+    }
+
+    @Override
+    public void addOnPropertyChangedCallback(OnPropertyChangedCallback onPropertyChangedCallback) {
+
+    }
+
+    @Override
+    public void removeOnPropertyChangedCallback(OnPropertyChangedCallback onPropertyChangedCallback) {
+
     }
 }

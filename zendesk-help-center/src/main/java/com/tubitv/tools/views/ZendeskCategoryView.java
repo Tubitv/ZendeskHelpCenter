@@ -1,13 +1,11 @@
 package com.tubitv.tools.views;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
-import com.tubitv.tools.R;
 import com.tubitv.tools.api.SupportCategory;
 import com.tubitv.tools.databinding.ViewZendeskCategoryBinding;
 
@@ -51,7 +49,7 @@ public class ZendeskCategoryView extends LinearLayout {
         }
 
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.view_zendesk_category, this, true);
+//        mBinding = DataBindingUtil.inflate(inflater, R.layout.view_zendesk_category, this, true);
 //        mBinding.setSupportModel(this);
     }
 

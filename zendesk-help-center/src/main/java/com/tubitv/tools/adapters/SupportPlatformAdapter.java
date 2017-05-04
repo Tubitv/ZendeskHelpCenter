@@ -56,7 +56,7 @@ public class SupportPlatformAdapter extends BaseAdapter {
             supportView = (ZendeskCategoryView) convertView;
         }
 
-        supportView.setSupportViewModel(new SupportCategory(mLabels[position], mIcons.get(position)));
+//        supportView.setSupportViewModel(new SupportCategory(mLabels[position], mIcons.get(position)));
         return supportView;
     }
 

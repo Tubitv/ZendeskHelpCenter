@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
 
         <variable
             name="supportCategory"
-            type="com.tubitv.tools.api.SupportCategory"/>
+            type="com.tubitv.tools.api.SupportCategory" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:paddingBottom="20dp"
+        android:background="@drawable/view_zendesk_category_click_selector"
         android:orientation="vertical"
-        android:background="@drawable/view_zendesk_category_click_selector">
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@+id/view_support_platform_icon"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:scaleType="centerInside"
-            android:src="@{supportCategory.drawableRes ?? @drawable/ic_support_main_frag_android}"/>
+            android:scaleType="centerInside" />
+        <!--android:src="@{supportCategory.drawableRes ?? @drawable/ic_support_main_frag_android}"-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:visibility="invisible"/>
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/view_support_platform_label"
@@ -37,8 +37,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@{supportCategory.getPlatform ?? @string/view_support_platform_android_label}"
-            android:textColor="@color/lighter_grey"/>
+
+            android:textColor="@color/lighter_grey" />
+        <!--android:text="@{supportCategory.getPlatform ?? @string/view_support_platform_android_label}"-->
 
     </LinearLayout>
 </layout>

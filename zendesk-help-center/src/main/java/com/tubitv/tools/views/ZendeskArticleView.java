@@ -1,7 +1,6 @@
 package com.tubitv.tools.views;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -51,8 +50,8 @@ public class ZendeskArticleView extends LinearLayout{
         }
 
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.view_zendesk_article, this, true);
-        mBinding.setArticleView(this);
+//        mBinding = DataBindingUtil.inflate(inflater, R.layout.view_zendesk_article, this, true);
+//        mBinding.setArticleView(this);
     }
 
     public void setArticle(@NonNull SupportArticle article) {

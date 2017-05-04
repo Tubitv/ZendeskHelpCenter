@@ -5,7 +5,7 @@
 
         <variable
             name="supportSection"
-            type="com.tubitv.tools.api.SupportSection"/>
+            type="com.tubitv.tools.api.SupportSection" />
     </data>
 
 
@@ -20,16 +20,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/view_zendesk_section_title_padding"
-            android:text="@{supportSection.getTitle}"
-            android:textColor="@color/white"
-            android:textSize="@dimen/view_zendesk_section_title_text_size"/>
 
+            android:textColor="@color/white"
+            android:textSize="@dimen/view_zendesk_section_title_text_size" />
+        <!--android:text="@{supportSection.getTitle}"-->
         <LinearLayout
             android:id="@+id/view_zendesk_section_ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clickable="false"
-            android:orientation="vertical">
-        </LinearLayout>
+            android:orientation="vertical"></LinearLayout>
     </LinearLayout>
 </layout>

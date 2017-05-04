@@ -17,9 +17,9 @@
         android:id="@+id/view_zendesk_article_main_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="@{articleView::onArticleClicked}"
-        android:padding="@dimen/view_zendesk_article_padding">
 
+        android:padding="@dimen/view_zendesk_article_padding">
+        <!--android:onClick="@{articleView::onArticleClicked}"-->
         <LinearLayout
             android:id="@+id/view_zendesk_article_ll"
             android:layout_width="wrap_content"
@@ -38,10 +38,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
                 android:paddingLeft="@dimen/view_zendesk_article_text_padding"
-                android:text="@{supportArticle.getTitle}"
+
                 android:textColor="@color/tubi_tv_orange"
                 android:textSize="@dimen/view_zendesk_article_text_size"/>
-
+            <!--android:text="@{supportArticle.getTitle}"-->
         </LinearLayout>
 
         <LinearLayout
