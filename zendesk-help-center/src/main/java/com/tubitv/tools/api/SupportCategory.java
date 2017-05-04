@@ -1,5 +1,7 @@
 package com.tubitv.tools.api;
 
+import android.databinding.Bindable;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -18,6 +20,27 @@ public class SupportCategory {
     private long id;
     @SerializedName(SECTIONS_KEY)
     private List<SupportSection> sectionList;
+
+
+    @Bindable
+    public String getLabel() {
+        return platform;
+    }
+    @Bindable
+    public Integer getDrawableRes() {
+//        return mDrawableRes;
+        return 1;
+    }
+
+    public void setLabel(String label) {
+//        this.mLabel = label;
+//        notifyPropertyChanged(BR.label);
+    }
+
+    public void setDrawableRes(Integer drawableRes) {
+//        this.mDrawableRes = drawableRes;
+//        notifyPropertyChanged(BR.drawableRes);
+    }
 
     public String getPlatform() {
         return platform;

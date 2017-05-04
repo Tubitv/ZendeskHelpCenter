@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tubi_tv_orange">#FF9933</color>
+    <color name="lighter_grey">#CCC</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#1E1E1E</color>
+</resources>

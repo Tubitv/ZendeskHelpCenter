@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="support_main_fragment_platform_icons">
+        <item>@drawable/zen_icon_general</item>
+        <item>@drawable/zen_icon_android</item>
+        <item>@drawable/zen_icon_chromecast</item>
+        <item>@drawable/zen_icon_ios</item>
+        <item>@drawable/zen_icon_roku</item>
+        <item>@drawable/zen_icon_apple_tv</item>
+        <item>@drawable/zen_icon_amazon_fire</item>
+        <item>@drawable/zen_icon_xbox</item>
+        <item>@drawable/zen_icon_smart_tv</item>
+    </integer-array>
+
+    <string-array name="support_main_fragment_platform_labels">
+        <item>@string/view_support_platform_general_label</item>
+        <item>@string/view_support_platform_android_label</item>
+        <item>@string/view_support_platform_cast_label</item>
+        <item>@string/view_support_platform_ios_label</item>
+        <item>@string/view_support_platform_roku_label</item>
+        <item>@string/view_support_platform_apple_tv_label</item>
+        <item>@string/view_support_platform_amazon_label</item>
+        <item>@string/view_support_platform_xbox_label</item>
+        <item>@string/view_support_platform_smart_tv_label</item>
+    </string-array>
+</resources>

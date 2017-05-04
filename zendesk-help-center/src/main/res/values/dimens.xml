@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SupportArticleFragment-->
+    <dimen name="fragment_support_article_padding">20dp</dimen>
+
+    <!--SupportMainFragment-->
+    <dimen name="fragment_support_main_grid_spacing">10dp</dimen>
+    <dimen name="fragment_support_main_padding">17dp</dimen>
+    <dimen name="fragment_support_main_title_bottom_padding">50dp</dimen>
+    <dimen name="fragment_support_main_title_text_size">20sp</dimen>
+    <dimen name="fragment_support_main_title_top_padding">30dp</dimen>
+
+    <!--ZendeskArticleView-->
+    <dimen name="view_zendesk_article_bullet_size">5dp</dimen>
+    <dimen name="view_zendesk_article_padding">10dp</dimen>
+    <dimen name="view_zendesk_article_text_size">20sp</dimen>
+    <dimen name="view_zendesk_article_text_padding">10dp</dimen>
+
+    <!--ZendeskSectionView-->
+    <dimen name="view_zendesk_section_padding">20dp</dimen>
+    <dimen name="view_zendesk_section_title_padding">20dp</dimen>
+    <dimen name="view_zendesk_section_title_text_size">24sp</dimen>
+</resources>

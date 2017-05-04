@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fragment_support_main_padding">
+
+        <TextView
+            android:id="@+id/fragment_support_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/fragment_support_main_title_bottom_padding"
+            android:paddingTop="@dimen/fragment_support_main_title_top_padding"
+            android:text="@string/fragment_support_main_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fragment_support_main_title_text_size"/>
+
+        <GridView
+            android:id="@+id/fragment_support_main_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_support_main_title"
+            android:gravity="fill"
+            android:horizontalSpacing="@dimen/fragment_support_main_grid_spacing"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/fragment_support_main_grid_spacing"/>
+
+    </RelativeLayout>
+</layout>

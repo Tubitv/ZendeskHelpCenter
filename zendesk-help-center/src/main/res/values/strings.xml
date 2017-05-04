@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">zendesk-help-center</string>
+    <!--FragmentSupportMain-->
+    <string name="fragment_support_main_title">What can we help you with?</string>
+
+    <!--SupportPlatformView-->
+    <string name="view_support_platform_amazon_label">Amazon Fire TV</string>
+    <string name="view_support_platform_android_label">Android Devices</string>
+    <string name="view_support_platform_apple_tv_label">Apple TV</string>
+    <string name="view_support_platform_cast_label">Chromecast</string>
+    <string name="view_support_platform_general_label">General</string>
+    <string name="view_support_platform_ios_label">iOS Devices</string>
+    <string name="view_support_platform_roku_label">Roku Devices</string>
+    <string name="view_support_platform_smart_tv_label">Samsung TV</string>
+    <string name="view_support_platform_xbox_label">Xbox One and 360</string>
 </resources>
