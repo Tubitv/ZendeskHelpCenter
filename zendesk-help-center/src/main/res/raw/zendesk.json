@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "platform": "android",
+      "id": 9123456,
+      "sections": [
+        {
+          "id": 5,
+          "title": "Registration & Sign In",
+          "categoryId": 9123456,
+          "articles": [
+            {
+              "title": "How do I manage my Account Settings?",
+              "position": 0,
+              "body": "<p>You can change your first name, gender, password</p>\n<p>You can also manage the notifications you receive from Tubi TV, your history, and your queue!</p>\n<p>If you're on a computer please click <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082714-How-do-I-manage-my-account-profile-settings-\" target=\"_blank\">here</a>.</p>\n<p>If you're on a mobile phone or tablet you can access your Tubi TV account settings by going to <a href=\"https://tubitv.com/\" target=\"_blank\">https://tubitv.com</a> on a browser such as Safari or Google Chrome then following the steps below:</p>\n<p>1. Tap on the hamburger menu (3 horizontal lines) on the top left corner of the screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/article_attachments/115000290794/mobileweb.jpg\" alt=\"mobileweb.jpg\" width=\"289\" height=\"496\" /></p>\n<p>2. Tap on <strong>Account </strong>and you'll see your Tubi TV profile. </p>\n<p><img src=\"https://help.tubitv.com/hc/article_attachments/115000287093/mobileweb-remove-account1.jpg\" alt=\"mobileweb-remove-account1.jpg\" width=\"286\" height=\"493\" /> </p>\n<p> </p>\n<p><span class=\"wysiwyg-font-size-large\">Similar articles:</span></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000084514-How-to-view-my-Tubi-TV-history-\" target=\"_blank\">How to view my Tubi TV history</a></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000084534-How-to-delete-my-Tubi-TV-history-\" target=\"_blank\">How to delete my Tubi TV history</a></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000083633-How-to-manage-my-Queue-\" target=\"_blank\">How to manage my Queue</a></p>"
+            },
+            {
+              "title": "Forgot your password?",
+              "position": 0,
+              "body": "<div>Please follow the steps below to reset your password and log in successfully.</div>\r\n<div>\r\n<ol>\r\n<li>Open the Tubi TV app on your Android mobile device.</li>\r\n<li>Tap on <strong><span class=\"il\">Sign</span> In</strong>. </li>\r\n<li>Select '<strong>Forgot your password?</strong>'</li>\r\n<li>Enter the email address associated with your Tubi TV account. We will send an email to you with the option to reset your password.</li>\r\n<li>Follow the directions in the email to reset your password.</li>\r\n</ol>\r\n</div>\r\n<div>\r\n<div>To log-in with your new password:</div>\r\n<ol>\r\n<li>Open the Tubi TV app.</li>\r\n<li>Tap on <strong><span class=\"il\">Sign</span> In</strong>.</li>\r\n<li>Enter the email address associated with your Tubi TV account and your new password.</li>\r\n<li>Submit the information and you'll be all set!</li>\r\n</ol>\r\n</div>"
+            },
+            {
+              "title": "How do I change my password?",
+              "position": 0,
+              "body": "<div>If you're on a computer or laptop please click <a href=\"#computer\">here</a>.</div>\n<div> </div>\n<div>If you're on o a <span class=\"wysiwyg-font-size-large\">Mobile Device<span class=\"wysiwyg-font-size-medium\">:</span></span></div>\n<div>\n<ol>\n<li>Go to <a href=\"https://tubitv.com/\" target=\"_blank\">https://tubitv.com</a> in a web browser.</li>\n<li>Click on the hamburger menu (3 horizontal lines) on the top left-hand corner of your screen and tap on <strong>Sign In</strong>.</li>\n<li>Enter your email address and password or sign in via Facebook if your Tubi TV account is associated with your Facebook account.</li>\n<li>After logging in, click the hamburger menu icon again in the top left corner and tap on <strong>Account</strong>.</li>\n<li>Scroll down to the <strong>Change Password</strong> section.</li>\n<li>Enter your current password.</li>\n<li>Enter your new password twice to confirm.</li>\n<li>Click on the <strong>Change Password</strong> button that pops up.</li>\n</ol>\n<p><a name=\"computer\"></a>If you're on a <span class=\"wysiwyg-font-size-large\">Computer<span class=\"wysiwyg-font-size-medium\">:</span></span></p>\n<p>Now your password will be reset! Next time you log in make sure you log in with the new password.</p>\n<ol>\n<li>Log in to your account.</li>\n<li>Click on the <strong>Sign In</strong> button on the top right corner of your screen.</li>\n<li>After logging in, click on your name on the top right corner of the screen.</li>\n<li>Scroll down to the <strong>Change Password</strong> section.</li>\n<li>Enter your current password.</li>\n<li>Enter your new password twice to confirm.</li>\n<li>Click on the <strong>Change Password</strong> button that pops up.</li>\n</ol>\n<p>Now your password will be reset! Next time you log in make sure you log in with the new password.</p>\n</div>\n<div> </div>"
+            },
+            {
+              "title": "How do I change my email?",
+              "position": 0,
+              "body": "<p>If you would like to change your email address, we can do that on your behalf. Please reach out to us via the Feedback button with the email you currently use for Tubi TV and what you'd like that email changed to. We'll update your email as soon as possible</p>"
+            },
+            {
+              "title": "How do I unsubscribe from emails?",
+              "position": 0,
+              "body": "<div>All Tubi TV Newsletters sent via email have the text “unsubscribe from this list” at the bottom. Please click the link with that text to unsubscribe from the Tubi TV newsletter emailing list.</div>\n<div> </div>\n<div>You can also adjust the notifications you receive in the <strong>Notifications</strong> section in your <strong>Account Settings</strong>.</div>\n<div> </div>\n<div>You can find out how to access your Account Settings <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082714-How-do-I-manage-my-account-profile-settings-\" target=\"_blank\">here</a>.</div>"
+            },
+            {
+              "title": "How do I remove my account?",
+              "position": 0,
+              "body": "<div>\n<p>We're sorry to hear that you want to remove your account. Since Tubi TV is free to view, any feedback would be very helpful in improving our product.</p>\n<p>To remove your account via your phone or tablet, please follow the steps below.</p>\n</div>\n<div>\n<ol>\n<li>Go to <a href=\"https://tubitv.com/\">https://tubitv.com</a> on a web browser such as Google Chrome.</li>\n<li>Tap on the hamburger button (horizontal lines) on the top left corner of the screen.</li>\n<li>Make sure you're signed in and click on <strong>Account</strong>. If you need assistance signing in, please check out <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082434-How-do-I-sign-in-to-the-website-on-my-phone-or-tablet-\">this article</a>.</li>\n<li>Scroll down your Profile page and tap on <strong>Remove My Account</strong>.</li>\n<li>Tap on <strong>Remove My Account</strong> to confirm.</li>\n<li>Let us know why you want to remove your account and tap on <strong>Submit</strong>.</li>\n<li>Lastly, enter your password and tap on <strong>Remove</strong>.</li>\n</ol>\n<p>If you're on a computer, please click <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082013-How-do-I-remove-my-account-\" target=\"_blank\">here</a>.</p>\n</div>"
+            }
+          ]
+        },
+        {
+          "title": "Account",
+          "articles": [
+            {
+              "title": "How do I manage my Account Settings?",
+              "body": "<p>You can change your first name, gender, password</p>\n<p>You can also manage the notifications you receive from Tubi TV, your history, and your queue!</p>\n<p>If you're on a computer please click <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082714-How-do-I-manage-my-account-profile-settings-\" target=\"_blank\">here</a>.</p>\n<p>If you're on a mobile phone or tablet you can access your Tubi TV account settings by going to <a href=\"https://tubitv.com/\" target=\"_blank\">https://tubitv.com</a> on a browser such as Safari or Google Chrome then following the steps below:</p>\n<p>1. Tap on the hamburger menu (3 horizontal lines) on the top left corner of the screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/article_attachments/115000290794/mobileweb.jpg\" alt=\"mobileweb.jpg\" width=\"289\" height=\"496\" /></p>\n<p>2. Tap on <strong>Account </strong>and you'll see your Tubi TV profile. </p>\n<p><img src=\"https://help.tubitv.com/hc/article_attachments/115000287093/mobileweb-remove-account1.jpg\" alt=\"mobileweb-remove-account1.jpg\" width=\"286\" height=\"493\" /> </p>\n<p> </p>\n<p><span class=\"wysiwyg-font-size-large\">Similar articles:</span></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000084514-How-to-view-my-Tubi-TV-history-\" target=\"_blank\">How to view my Tubi TV history</a></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000084534-How-to-delete-my-Tubi-TV-history-\" target=\"_blank\">How to delete my Tubi TV history</a></p>\n<p><a href=\"https://help.tubitv.com/hc/en-us/articles/115000083633-How-to-manage-my-Queue-\" target=\"_blank\">How to manage my Queue</a></p>"
+            },
+            {
+              "title": "I forgot my password.",
+              "body": "<div>\n<div>If you have forgotten your password, please follow the steps below to reset your password and log in successfully. If you remember your password and would just like to reset it, please click <a href=\"https://help.tubitv.com/hc/en-us/articles/219377807-How-do-I-change-my-password-\" target=\"_blank\">here</a>.</div>\n<div>\n<ol>\n<li>Go to <a href=\"https://tubitv.com/forgot\">https://tubitv.com/forgot</a>.</li>\n<li>Enter the email address associated with your Tubi TV account. We will send an email to you with the option to reset your password.</li>\n<li>Follow the directions in the email to reset your password.</li>\n</ol>\n</div>\n</div>\n<div>\n<div>To log-in with your new password:</div>\n<ol>\n<li>Open the Tubi TV app.</li>\n<li>Tap on <strong><span class=\"il\">Sign</span> In</strong>.</li>\n<li>Enter the email address associated with your Tubi TV account and your new password.</li>\n<li>Submit the information and you'll be all set!</li>\n</ol>\n</div>"
+            },
+            {
+              "title": "How do I change my password?",
+              "body": "<div>If you're on a computer or laptop please click <a href=\"#computer\">here</a>.</div>\n<div> </div>\n<div>If you're on a <span class=\"wysiwyg-font-size-large\">Mobile Device<span class=\"wysiwyg-font-size-medium\">:</span></span></div>\n<div>\n<ol>\n<li>Go to <a href=\"https://tubitv.com/\" target=\"_blank\">https://tubitv.com</a> in a web browser.</li>\n<li>Click on the hamburger menu (3 horizontal lines) on the top left-hand corner of your screen and tap on <strong>Sign In</strong>.</li>\n<li>Enter your email address and password or sign in via Facebook if your Tubi TV account is associated with your Facebook account.</li>\n<li>After logging in, click the hamburger menu icon again in the top left corner and tap on <strong>Account</strong>.</li>\n<li>Scroll down to the <strong>Change Password</strong> section.</li>\n<li>Enter your current password.</li>\n<li>Enter your new password twice to confirm.</li>\n<li>Click on the <strong>Change Password</strong> button that pops up.</li>\n</ol>\n<p><a name=\"computer\"></a>If you're on a <span class=\"wysiwyg-font-size-large\">Computer<span class=\"wysiwyg-font-size-medium\">:</span></span></p>\n<p>Now your password will be reset! Next time you log in make sure you log in with the new password.</p>\n<ol>\n<li>Log in to your account.</li>\n<li>Click on the <strong>Sign In</strong> button on the top right corner of your screen.</li>\n<li>After logging in, click on your name on the top right corner of the screen.</li>\n<li>Scroll down to the <strong>Change Password</strong> section.</li>\n<li>Enter your current password.</li>\n<li>Enter your new password twice to confirm.</li>\n<li>Click on the <strong>Change Password</strong> button that pops up.</li>\n</ol>\n<p>Now your password will be reset! Next time you log in make sure you log in with the new password.</p>\n</div>\n<div> </div>"
+            },
+            {
+              "title": "How do I change my email?",
+              "body": "<p>If you would like to change your email address, we can do that on your behalf. Please reach out to us via the Feedback button with the email you currently use for Tubi TV and what you'd like that email changed to. We'll update your email as soon as possible</p>"
+            },
+            {
+              "title": "How do I unsubscribe from emails?",
+              "body": "<div>All Tubi TV Newsletters sent via email have the text “unsubscribe from this list” at the bottom. Please click the link with that text to unsubscribe from the Tubi TV newsletter emailing list.</div>\n<div> </div>\n<div>You can also adjust the notifications you receive in the <strong>Notifications</strong> section in your <strong>Account Settings</strong>.</div>\n<div> </div>\n<div>You can find out how to access your Account Settings <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082714-How-do-I-manage-my-account-profile-settings-\" target=\"_blank\">here</a>.</div>"
+            },
+            {
+              "title": "How do I remove my account?",
+              "body": "<div>\n<p>We're sorry to hear that you want to remove your account. Since Tubi TV is free to view, any feedback would be very helpful in improving our product.</p>\n<p>To remove your account via your phone or tablet, please follow the steps below.</p>\n</div>\n<div>\n<ol>\n<li>Go to <a href=\"https://tubitv.com/\">https://tubitv.com</a> on a web browser such as Google Chrome.</li>\n<li>Tap on the hamburger button (horizontal lines) on the top left corner of the screen.</li>\n<li>Make sure you're signed in and click on <strong>Account</strong>. If you need assistance signing in, please check out <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082434-How-do-I-sign-in-to-the-website-on-my-phone-or-tablet-\">this article</a>.</li>\n<li>Scroll down your Profile page and tap on <strong>Remove My Account</strong>.</li>\n<li>Tap on <strong>Remove My Account</strong> to confirm.</li>\n<li>Let us know why you want to remove your account and tap on <strong>Submit</strong>.</li>\n<li>Lastly, enter your password and tap on <strong>Remove</strong>.</li>\n</ol>\n<p>If you're on a computer, please click <a href=\"https://help.tubitv.com/hc/en-us/articles/115000082013-How-do-I-remove-my-account-\" target=\"_blank\">here</a>.</p>\n</div>"
+            }
+          ]
+        },
+        {
+          "title": "Closed Captions/Subtitles",
+          "articles": [
+            {
+              "title": "About Closed Captions",
+              "body": "<section>\n<div>\n<p>We offer Closed Captions whenever our content partners provide them to us. As we add more content, we strive to add more Closed Captions whenever possible.</p>\n<p>Generally, our content is captioned if the video is a full-length movie or TV episode that has been shown on US TV after September 2012 with captions. An example of content in our catalog that matches these criteria can be found in our Most Popular and Featured sections.</p>\n</div>\n</section>\n<section><header></header></section>"
+            },
+            {
+              "title": "Turn on closed captions/subtitles",
+              "body": "<p><strong><strong>How to turn on captions for all videos on the Tubi TV app on Android:</strong></strong></p>\n<ol>\n<li>Launch the Tubi TV app on your Android device. </li>\n<li>Tap on the Overflow Menu (3 vertical dots) on the top right corner of the screen.</li>\n<li>Tap on \"Settings\".</li>\n<li>Go to \"Captions\" and swipe the white button toward the right of the screen to activate captions for all videos.</li>\n</ol>\n<p><strong>How to turn on captions for specific videos:</strong></p>\n<ol>\n<li style=\"font-weight: 400;\">Select the video you want to watch.</li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Tap on the screen.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Tap on the <strong>CC</strong> button, which will become orange, indicating closed captions/subtitles are turned on.</span></li>\n</ol>\n<p><span style=\"font-weight: 400;\">You can learn more about our Closed Captions in our <a href=\"https://help.tubitv.com/hc/en-us/articles/115000096214-About-Closed-Captions\">About Closed Captions</a> section.</span></p>"
+            },
+            {
+              "title": "Turn off closed captions/subtitles",
+              "body": "<ol>\r\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Select the video you want to watch. </span></li>\r\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Tap on the screen.</span></li>\r\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Tap on the orange <strong>CC</strong> button and captions/subtitles will be deactivated.</span></li>\r\n</ol>"
+            }
+          ]
+        },
+        {
+          "title": "Queue",
+          "articles": [
+            {
+              "title": "Where is my Queue and where is it?",
+              "body": "<p>My Queue is a feature that allows you to save titles in a category to view at a later time. Your Queue appears below the Continue Watching or Featured categories in the Tubi TV home screen.</p>\n<p>Your Queue can be accessed through any of the Tubi TV platforms, all you have to do is sign in!</p>\n<p>If you haven't added any items to your queue, you will not see this category.</p>"
+            },
+            {
+              "title": "How to add a video to my Queue?",
+              "body": "<p>The fastest way is to select and hold any title until a prompt appears with the option to <strong>Add to queue</strong>. Tap on <strong>Add to queue</strong> and the title will be added to the category labeled <strong>My Queue</strong>, which is above the <strong>Featured</strong> category.</p>\n<p>Another way is to select a title from the home screen, and tap the <strong>Add to Queue</strong> button located next to the play button on the titles' description screen. Afterward, you can go back to the Tubi TV home screen, scroll up to <strong>My Queue</strong>, and you’ll see the movie/TV show you just selected on this list.</p>"
+            },
+            {
+              "title": "How to clear My Queue?",
+              "body": "<section>To remove a specific title from your queue:\n<p>Select and hold a title from the home screen until a prompt appears with the option to Remove from queue</p>\n<div>\n<p>To delete your entire Queue, please go to your<a href=\"https://tubitv.com/account/history\" target=\"_blank\"> Queue Settings</a>.</p>\n<p>If you are not signed in to your Tubi TV account on your web browser, you'll be directed to a sign in page. If this is the case, please sign in.</p>\n<p>Afterward you can access your history by either tapping on the history link provided above or you can tap on the hamburger menu (3 horizontal lines) on the top left-corner of your screen, then tap on <strong>Account</strong>, and scroll down and tap on <strong>History &amp; Queue</strong>.</p>\n<p>To clear all titles in your queue, please click on the <strong>Delete Your Queue</strong> button on the bottom of the page. Now you will have no titles in your Queue category.</p>\n</div>\n</section>"
+            }
+          ]
+        },
+        {
+          "title": "Continue Watching",
+          "articles": [
+            {
+              "title": "Where can I view my Tubi TV history?",
+              "body": "<p>Any watched, but not yet completed, title will appear in the Continue Watching category located at the top of the Tubi TV home screen. Your saved Continue Watching list can be accessed from any Tubi TV supported device. All you have to do is sign in!</p>\n<p>To access your entire history, please visit the following link: <a href=\"https://tubitv.com/account/history\" target=\"_blank\">https://tubitv.com/account/history</a></p>\n<p>If you are not signed in to your Tubi TV account on your web browser, you'll be directed to a sign in page. If this is the case, please sign in.</p>\n<p>Afterward you can access your history by either tapping on the history link provided above or you can tap on the hamburger menu (3 horizontal lines) on the top left-corner of your screen, then tap on <strong>Account</strong>, and scroll down and tap on <strong>History &amp; Queue</strong>.</p>"
+            },
+            {
+              "title": "How to delete my Tubi TV history?",
+              "body": "<section>\n<div>\n<p>To delete your entire Tubi TV history, please go to <a href=\"https://tubitv.com/account/history\">https://tubitv.com/account/history</a>.</p>\n<p>If you are not signed in to your Tubi TV account on your web browser, you'll be directed to a sign in page. If this is the case, please sign in.</p>\n<p>Afterward you can access your history by either tapping on the history link provided above or you can tap on the hamburger menu (3 horizontal lines) on the top left-corner of your screen, then tap on <strong>Account</strong>, and scroll down and tap on <strong>History &amp; Queue</strong>.</p>\n<p>To clear all titles in your history, please click on the <strong>Delete Your Watch History</strong> button on the bottom of the page. Now you will have no titles in your Watching History category.</p>\n</div>\n<div>To remove specific titles from your history/Continue Watching category:</div>\n<div>\n<ol>\n<li>Open the Tubi TV app.</li>\n<li>Go to the Tubi home screen.</li>\n<li>Hold down on the title you wish to remove from Continue Watching.</li>\n<li>Wait for the message 'Remove from History' or 'Remove from Continue Watching' to appear.</li>\n</ol>\n</div>\n</section>"
+            }
+          ]
+        },
+        {
+          "title": "Chromecast",
+          "articles": [
+            {
+              "title": "How to cast Tubi TV from my Android via Chromecast",
+              "body": "<p>To set up Chromecast with your Android mobile device, please follow the steps below:</p>\n<p>1. Make sure your Chromecast is connected to the TV and that your phone is connected to the same Internet network as your Chromecast.</p>\n<p>2. Once your Chromecast is set up, launch your Tubi TV app.</p>\n<p>3. Tap on the Chromecast icon on the top right-hand side of the Tubi TV app.</p>\n<p>4. Select the Chromecast device you want to connect to.</p>\n<p>You'll now be connected to Chromecast and a Tubi TV splash screen on your TV. To play a video, select the title you want to watch and it will start playing on your TV!</p>\n<p>To stop casting, tap on the Chromecast icon again and select \"Stop casting\".</p>"
+            },
+            {
+              "title": "How to activate/deactivate subtitles while casting?",
+              "body": "<p>If you're casting from an Android phone or tablet device you can activate subtitles by following the steps below:</p>\n<p>1. Make sure you're in the Tubi TV app and that you're connected to Chromecast.</p>\n<p>2. Tap on the Chromecast controls at the bottom of the screen:</p>\n<p class=\"wysiwyg-text-align-center\"> <img src=\"https://help.tubitv.com/hc/article_attachments/115008644767/rsz_chromecast-subtitles0.jpg\" alt=\"rsz_chromecast-subtitles0.jpg\" /></p>\n<p> </p>\n<p>3. Tap on the \"CC\" button to the right of the play button:</p>\n<p class=\"wysiwyg-text-align-center\"> <img src=\"https://help.tubitv.com/hc/article_attachments/115008644787/rsz_chromecast-subtitles.jpg\" alt=\"rsz_chromecast-subtitles.jpg\" /></p>\n<p> </p>\n<p>4. Tap on \"English Subtitle\" and press OK.</p>\n<p class=\"wysiwyg-text-align-center\"> <img src=\"https://help.tubitv.com/hc/article_attachments/115008644807/rsz_chromecast-subtitles2.jpg\" alt=\"rsz_chromecast-subtitles2.jpg\" /></p>\n<p class=\"wysiwyg-text-align-center\"> </p>\n<div>To deactivate subtitles tap on <strong>None</strong> after tapping on <strong>CC</strong>.</div>\n<div>Now subtitles will be activated on your big screen!</div>\n<p> </p>\n<p>Now subtitles will be activated on your big screen!</p>"
+            },
+            {
+              "title": "Won't Cast to TV from My Android Phone",
+              "body": "<p>If you're having trouble casting, you may not have the latest version of the Tubi TV app installed.</p>\n<p>You can check if there is an update for Tubi TV available by following the steps below:</p>\n<ul>\n<li>Open the <strong>Google Play Store</strong> app on your phone</li>\n<li>Search for <strong>Tubi TV</strong></li>\n<li>Tap on <strong>Tubi TV - Free Movies &amp; TV</strong></li>\n<li>If you see <strong>Update</strong> please select it and the latest version of Tubi TV will be installed on your device.</li>\n</ul>\n<p>Afterward, you'll be able to cast Tubi TV without any problems. Check out how to cast <a href=\"https://help.tubitv.com/hc/en-us/articles/219378287\" target=\"_blank\">here</a>.</p>"
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting",
+          "articles": [
+            {
+              "title": "How to limit data usage?",
+              "body": "<div>\n<p>Data usage on Tubi TV varies per device, but due to the high quality of the video streams on Tubi TV, data will be consumed while streaming videos.</p>\n<p>We understand this can create a headache to those that have a monthly bandwidth or data cap on their Internet service.</p>\n</div>\n<div>To use the least amount of data on your Android device please lower the resolution of the video by following the steps below:\n<ol>\n<li>Open the Tubi TV app.</li>\n<li>Play a video.</li>\n<li>Tap on the screen while the video is playing and tap on <strong>HD</strong> on the bottom right corner.</li>\n<li>Tap on the lowest bit rate option (bottom option).</li>\n</ol>\n</div>\n<div>Less data will be consumed in this manner.</div>"
+            },
+            {
+              "title": "I'm having trouble watching videos",
+              "body": "<div>If you're experiencing technical issues with Tubi TV on your Android mobile device, please follow the troubleshooting steps below:</div>\n<div>\n<ul>\n<li>Make sure your OS is updated to the newest version.</li>\n<li>Restart the app by exiting out, closing the background app and re-opening Tubi TV.</li>\n<li>Restart your device and re-open Tubi TV.</li>\n<li>Uninstall Tubi TV and re-download it from the Google Play Store.</li>\n<li>Clear Tubi TV data and cache stored on your app. You can do this by going to Settings on your Android device, then selecting Apps &gt; All &gt; Tubi TV &gt; tap on Clear cache.</li>\n<li>Removing apps you no longer use on your device to clear some memory.</li>\n</ul>\n</div>\n<div>If you continue to experience issues, please let us know and provide the model and OS version of your device, e.g. X410, Android v4.4.2.</div>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platform": "roku",
+      "id": 1,
+      "sections": [
+        {
+          "title": "Account",
+          "id": 2,
+          "articles": [
+            {
+              "title": "How to Register on Roku",
+              "body": "<p>You can register for Tubi TV on Roku by following the steps in one of the links below.</p>\n<p> </p>\n<p>If you have a Roku 2, a Roku Stick 3420X or 3500X, a Roku Express, or a Roku TV series 5000, follow the steps <a href=\"https://help.tubitv.com/hc/en-us/articles/218849837-Sign-up-on-Roku-with-a-Web-Browser\">here</a>.</p>\n<p> </p>\n<p>If you have a Roku 3, Roku 4, Roku 5, or a Roku TV series 6000, follow the steps <a href=\"https://help.tubitv.com/hc/en-us/articles/229151287-Register-on-Roku-with-a-Web-Browser\">here</a>. </p>"
+            },
+            {
+              "title": "How to Sign In on Roku",
+              "body": "<p>You can sign into your Tubi TV account on Roku by following the steps in one of the links below.</p>\n<p> </p>\n<p>If you have a Roku 2, a Roku Stick 3420X or 3500X, a Roku Express, or a Roku TV series 5000, follow the steps <a href=\"https://help.tubitv.com/hc/en-us/articles/218350908-Sign-in-on-Roku-with-a-Web-Browser\">here</a>.</p>\n<p> </p>\n<p>If you have a Roku 3, Roku 4, Roku 5, or a Roku TV series 6000, follow the steps <a href=\"https://help.tubitv.com/hc/en-us/articles/229150027\">here to sign in with email</a> or <a href=\"https://help.tubitv.com/hc/en-us/articles/229498228-Sign-In-on-Roku-with-a-Web-Browser\">here to sign in with a web browser</a>. </p>"
+            },
+            {
+              "title": "How to add Tubi TV to your Roku channels",
+              "body": "<p><span style=\"font-weight: 400;\">You can find Tubi TV on Roku’s </span><strong>Streaming Channels Store</strong><span style=\"font-weight: 400;\">. Check out the </span><strong>Most Popular</strong><span style=\"font-weight: 400;\">, </span><strong>Top Free</strong><span style=\"font-weight: 400;\">, and </span><strong>Movies &amp; TV </strong><span style=\"font-weight: 400;\">sections. You can also search for “Tubi TV.”</span></p>\r\n<p><span style=\"font-weight: 400;\">Once you find Tubi TV, click on </span><strong>Add channel</strong><span style=\"font-weight: 400;\"> and Tubi TV will be added to your Home page.</span></p>\r\n<p> </p>"
+            },
+            {
+              "title": "Activation Code Issues",
+              "body": "<p>If you're trying to <strong>sign up</strong> or <strong>activate your existing Tubi TV account </strong>on Roku with a web browser, please make sure <span class=\"wysiwyg-color-black\">you</span> go to <a href=\"https://tubitv.com/activate\" target=\"_blank\">https://tubitv.com/activate</a>.</p>\n<p>After signing up or logging in, enter the code that appears on your TV screen.</p>\n<p><strong>New Users:</strong> If you're signing up click on <strong>Sign up with Facebook</strong> or <strong>Sign up with email</strong> and proceed to create a Tubi TV account.</p>\n<p><strong>Existing Users:</strong> If you already have a Tubi TV account click on the<strong> Login</strong> link.</p>\n<p>Afterward, you’ll be directed to a new screen where you can enter the activation code that is displayed on your Roku.</p>"
+            },
+            {
+              "title": "I keep having to register every time I click on Tubi TV",
+              "body": "<p>In order to not have to register every time you click on the Tubi TV app on Roku, please don't log out of the app by clicking the \"Log Out\" button on the top of the screen. To exit the app, simply back out or click on the Home button on your Roku remote.</p>"
+            },
+            {
+              "title": "I keep seeing the sign-up screen on Roku",
+              "body": "<p>Typically the sign-up screen appears only if you haven’t signed up or logged in to your Tubi TV account on the Roku device in which you’re seeing this error message.</p>\n<p>If you no longer want to see this screen, please <a href=\"http://help.tubitv.com/hc/en-us/articles/115000457128-How-to-Register-on-Roku\">REGISTER</a> or <a href=\"http://help.tubitv.com/hc/en-us/articles/115000459988-How-to-Sign-In-on-Roku\">SIGN IN</a> to your Tubi TV account on your Roku.</p>\n<p> </p>"
+            },
+            {
+              "title": "Invalid Username/Password error message",
+              "body": "<p>If you have forgotten your password, you can reset it to one you can remember by going to <a href=\"http://tubitv.com/forgot\">http://tubitv.com/forgot</a>.</p>\n<p>Please enter the email address associated with your Tubi TV account.</p>\n<p>A link to reset your own will be sent to the email you provided. If you're having trouble finding the email, please make sure to check your spam folder. </p>\n<p>After you open the email, click on the link and enter a new password. </p>\n<p>Now you can log in to your Tubi TV account with this new password.</p>"
+            },
+            {
+              "title": "If I don't sign up, will I have access to the entire Tubi TV catalogue?",
+              "body": "<p>You will have access to the entire Tubi TV catalogue!</p>\r\n<p>The downside of not signing up is that you won't be able to add videos to a queue or see your viewing history. </p>"
+            },
+            {
+              "title": "Do I have to log in or sign up every time I want to watch Tubi TV?",
+              "body": "<p>You only have to go through the registration (sign-up or login) process one time per device. Afterward, you won’t see the sign-up screen any longer.</p>"
+            },
+            {
+              "title": "Sign up on Roku with a Web Browser",
+              "body": "<p>With<strong> a Web Browser (on a computer or mobile device)</strong> </p>\n<ol>\n<li>Open the Tubi TV app.</li>\n<li>\n<p>Select <strong>OK </strong>to Sign up.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213853648/rsz_roku_signup1.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Select <strong>Don't have a smartphone? </strong>to sign up online.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213947607/rsz_roku_signupweb2.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Go to <a href=\"https://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> in a web browser as directed on the new screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213853728/rsz_roku_signupweb3.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>This is what <a href=\"https://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> looks like. Click on <strong>Sign up with Facebook</strong> or <strong>Sign up with Email</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213853908/rsz_roku_signupweb4.jpg\" alt=\"\" width=\"581\" height=\"319\" /></p>\n</li>\n<li>\n<p>Fill out the fields that are displayed and click on the <strong>Sign Up</strong> button.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213947787/rsz_roku_signupweb5.jpg\" alt=\"\" width=\"581\" height=\"319\" /></p>\n</li>\n<li>\n<p>Once you submit this information, you’ll be directed to a new screen where you can enter the activation code that is shown on your Roku screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213947807/rsz_roku_signupweb6.jpg\" alt=\"\" width=\"581\" height=\"320\" /></p>\n</li>\n<li>\n<p>Enter the code and both your computer and Roku screens will automatically update as soon as your activation completes. Happy streaming!</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213947847/rsz_roku_signuplast.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n</ol>\n<p>Note: In order to not have to register every time you click on the Tubi TV app on Roku, please don't log out of the app by clicking the \"Log Out\" button on the top of the screen. To exit the app, simply back out of the app or click on the Home button on your Roku remote.</p>\n<p><strong>Still experiencing trouble?</strong></p>\n<ul>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/218347568-I-couldn-t-find-a-place-to-enter-the-activation-code\">Activation Code Issues</a></li>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/218347698-I-completed-the-registration-process-and-it-took-me-back-to-the-sign-up-screen\">I keep seeing the sign up screen</a></li>\n</ul>"
+            },
+            {
+              "title": "Sign in on Roku with a Web Browser",
+              "body": "<p>To log in on Roku with<strong> a Web Browser (on a computer or mobile device)</strong> </p>\n<ol>\n<li>From the Roku Home page, click on the Tubi TV app.</li>\n<li>\n<p>Select <strong>OK </strong>to sign in.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213953327/rsz_roku_signup1.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Select <strong>Don't have a smartphone?</strong> to sign in online.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213859668/rsz_roku_signupweb2.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Go to <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> in a web browser as directed on the new screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213859688/rsz_roku_signupweb3.jpg\" alt=\"\" width=\"581\" height=\"327\" /></p>\n</li>\n<li>\n<p>This is what <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> looks like. Since you already have a Tubi TV account, click on the <strong>L</strong><strong>ogin</strong> link, next to \"Already a member?\" and proceed to login with Facebook or with email.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213955707/rsz_roku_loginweb4.jpg\" alt=\"\" width=\"581\" height=\"318\" /></p>\n</li>\n<li>\n<p>Fill out the fields that are displayed and click on the <strong>Log In</strong> button.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213955747/rsz_roku_loginweb5.jpg\" alt=\"\" width=\"581\" height=\"318\" /></p>\n</li>\n<li>\n<p>Once you submit this information, you’ll be directed to a new screen where you can enter the activation code that is shown on your Roku screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213955787/rsz_roku_signupweb6.jpg\" alt=\"\" width=\"580\" height=\"319\" /></p>\n</li>\n<li>\n<p>Enter the code and your Roku screen will automatically update as soon as your activation completes. Happy streaming!</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213862028/rsz_roku_signuplast.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n</ol>\n<p>Note: In order to not have to register every time you click on the Tubi TV app on Roku, please don't log out of the app by clicking the \"Log Out\" button on the top of the screen. To exit the app, simply back out of the app or click on the Home button on your Roku remote.</p>\n<p> </p>\n<p><strong>Still experiencing troubles?</strong></p>\n<ul>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/218347568-I-couldn-t-find-a-place-to-enter-the-activation-code\">Activation Code Issues</a></li>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/218347698-I-completed-the-registration-process-and-it-took-me-back-to-the-sign-up-screen\">I keep seeing the sign-up screen</a></li>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/218352828\">Invalid username/password error message</a><strong> </strong></li>\n</ul>\n<p> </p>"
+            },
+            {
+              "title": "New - Register on Roku with a Web Browser",
+              "body": "<p>With<strong> a Web Browser (on a computer or mobile device)</strong> </p>\n<ol>\n<li>Open the Tubi TV app.</li>\n<li>\n<p>Click on <strong>Sign In</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000507847/rsz_newuiroku_register1.jpg\" alt=\"\" width=\"582\" height=\"327\" /></p>\n</li>\n<li>\n<p>Click on <strong>Register Online</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000521388/rsz_newuiroku_register2.jpg\" alt=\"\" width=\"582\" height=\"327\" /></p>\n</li>\n<li>\n<p>Go to <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> in a web browser as directed on the new screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000507947/rsz_newuiroku_register3.jpg\" alt=\"\" width=\"582\" height=\"327\" /></p>\n</li>\n<li>\n<p>This is what <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> looks like.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000521448/rsz_newuiroku_registerweb.jpg\" alt=\"\" width=\"580\" height=\"319\" /></p>\n</li>\n<li>\n<p>Click on<strong> Register via Facebook</strong> or <strong>Register via Email</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000521448/rsz_newuiroku_registerweb.jpg\" alt=\"\" width=\"582\" height=\"322\" /></p>\n</li>\n<li>\n<p>Fill out the fields that are displayed and click on the <strong>Register</strong> button.</p>\n<p> <img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000521508/rsz_newuiroku_registerweb3.jpg\" alt=\"\" width=\"576\" height=\"316\" /></p>\n</li>\n<li>\n<p>Once you submit this information, you’ll be directed to a new screen where you can enter the activation code that is shown on your Roku screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000521488/rsz_newuiroku_registerweb2.jpg\" alt=\"\" width=\"580\" height=\"319\" /></p>\n</li>\n<li>\n<p>Enter the code and both your computer and Roku screens will automatically update as soon as your activation completes. Happy streaming!</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000524828/rsz_newuiroku_registerlast.jpg\" alt=\"\" width=\"583\" height=\"327\" /></p>\n</li>\n</ol>\n<p>Note: In order to not have to register every time you click on the Tubi TV app on Roku, please don't log out of the app by clicking the \"Log Out\" button on the top of the screen. To exit the app, simply back out of the app or click on the Home button on your Roku remote.</p>\n<p> </p>\n<p><strong>Still experiencing trouble?</strong></p>\n<ul>\n<li><a href=\"/hc/en-us/articles/218347568-I-couldn-t-find-a-place-to-enter-the-activation-code\" target=\"_blank\">Activation Code Issues</a></li>\n<li><a href=\"/hc/en-us/articles/218347698-I-completed-the-registration-process-and-it-took-me-back-to-the-sign-up-screen\" target=\"_blank\">I keep seeing the sign up screen</a></li>\n<li><a href=\"https://help.tubitv.com/hc/en-us/articles/227779667\" target=\"_blank\">Invalid Birthday Error</a></li>\n</ul>\n<p> </p>"
+            },
+            {
+              "title": "New - Sign In on Roku with a Web Browser",
+              "body": "<p>To log in on Roku with<strong> a Web Browser (on a computer or mobile device)</strong> </p>\n<ol>\n<li>From the Roku Home page, click on the Tubi TV app.</li>\n<li>\n<p>Click <strong>Sign In</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213689787/rsz_roku_login1.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Click on <strong>Register Online</strong>.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213579508/rsz_roku_login2.1.jpg\" alt=\"\" width=\"580\" height=\"326\" /></p>\n</li>\n<li>\n<p>Go to <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> in a web browser as directed on the new screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/213689847/rsz_roku_login3.jpg\" alt=\"\" width=\"580\" height=\"325\" /></p>\n</li>\n<li>\n<p>This is what <a href=\"http://www.tubitv.com/activate\" target=\"_blank\">www.tubitv.com/activate</a> looks like.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000513147/rsz_newuiroku_registerweb.jpg\" alt=\"\" width=\"575\" height=\"316\" /></p>\n</li>\n<li>\n<p>Since you already have a Tubi TV account, click on the <strong>Sign In</strong> link, next to \"Have an account?\" and proceed to login with Facebook or with email.</p>\n</li>\n<li>\n<p>Fill out the fields that are displayed and click on the <strong>Log In</strong> button.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000513587/rsz_newuiroku_loginweb.jpg\" alt=\"\" width=\"579\" height=\"318\" /></p>\n</li>\n<li>\n<p>Once you submit this information, you’ll be directed to a new screen where you can enter the activation code that is shown on your Roku screen.</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000528488/rsz_newrokui_loginweb2.jpg\" alt=\"\" width=\"588\" height=\"323\" /></p>\n</li>\n<li>\n<p>Enter the code and your Roku screen will automatically update as soon as your activation completes. Happy streaming!</p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000528588/rsz_newuiroku_registerlast.jpg\" alt=\"\" width=\"590\" height=\"332\" /></p>\n</li>\n</ol>\n<p>Note: In order to not have to register every time you click on the Tubi TV app on Roku, please don't log out of the app by clicking the \"Log Out\" button on the top of the screen. To exit the app, simply back out of the app or click on the Home button on your Roku remote.</p>\n<p> </p>\n<p><strong>Still experiencing troubles?</strong></p>\n<ul>\n<li><a style=\"background-color: #ffffff;\" href=\"/hc/en-us/articles/218347568-I-couldn-t-find-a-place-to-enter-the-activation-code\">Activation Code Issues</a></li>\n<li><a href=\"/hc/en-us/articles/218347698-I-completed-the-registration-process-and-it-took-me-back-to-the-sign-up-screen\">I keep seeing the sign-up screen</a></li>\n<li><a href=\"/hc/en-us/articles/218352828\">Invalid username/password error message</a><strong> </strong></li>\n</ul>\n<p> </p>"
+            },
+            {
+              "title": "New - Sign in with email",
+              "body": "<p>To log in to Tubi TV with email directly on your Roku:</p>\n<ol>\n<li>Open the Tubi TV app from your Roku home screen.</li>\n<li>Click on <strong>Sign In or Register</strong>.\n<p> </p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000515807/rsz_newuiroku_register1.jpg\" alt=\"\" width=\"582\" height=\"327\" /></p>\n</li>\n<li>Click on <strong>Sign in via Email</strong>.\n<p> </p>\n<img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000531088/rsz_newuiroku_loginemail.jpg\" alt=\"\" width=\"581\" height=\"327\" /><br />\n<p> </p>\n</li>\n<li>\n<p>You'll be directed to the following Sign In screen:</p>\n<p> </p>\n<p><img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000516287/newuiroku_loginemail2.jpg\" alt=\"\" width=\"592\" height=\"333\" /></p>\n<p> </p>\n</li>\n<li>\n<p>Press on the OK button on your remote to begin entering the email associated with your Tubi TV account and password.</p>\n</li>\n<li>Select <strong>Sign In</strong> and your Tubi TV account will be displayed.\n<p> </p>\n<img src=\"https://help.tubitv.com/hc/en-us/article_attachments/115000531408/rsz_newuiroku_registerlast.jpg\" alt=\"\" width=\"607\" height=\"342\" /><br />\n<p> </p>\n</li>\n</ol>"
+            }
+          ]
+        },
+        {
+          "title": "Closed Captions",
+          "id": 3,
+          "articles": [
+            {
+              "title": "",
+              "body": ""
+            }
+          ]
+        },
+        {
+          "title": "Queue",
+          "id": 4,
+          "articles": [
+            {
+              "title": "",
+              "body": ""
+            }
+          ]
+        },
+        {
+          "title": "Parental Controls",
+          "articles": [
+            {
+              "title": "",
+              "body": ""
+            }
+          ]
+        },
+        {
+          "title": "Search",
+          "articles": [
+            {
+              "title": "",
+              "body": ""
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting",
+          "articles": [
+            {
+              "title": "",
+              "body": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
