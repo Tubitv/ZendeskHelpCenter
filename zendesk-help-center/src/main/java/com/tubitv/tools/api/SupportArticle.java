@@ -6,11 +6,14 @@ import com.google.gson.annotations.SerializedName;
  * Created by stoyan on 5/2/17.
  */
 public class SupportArticle {
+    private static final String ID_KEY = "id";
     private static final String TITLE_KEY = "title";
     private static final String BODY_KEY = "body";
     private static final String POSITION_KEY = "position";
     private static final String SECTION_ID_KEY = "section_id";
 
+    @SerializedName(ID_KEY)
+    private long articleId;
     @SerializedName(TITLE_KEY)
     private String title;
     @SerializedName(BODY_KEY)
@@ -22,6 +25,13 @@ public class SupportArticle {
 
     private long categoryId;
 
+    public long getArticleId() {
+        return articleId;
+    }
+
+    public void setArticleId(long articleId) {
+        this.articleId = articleId;
+    }
 
     public long getCategoryId() {
         return categoryId;

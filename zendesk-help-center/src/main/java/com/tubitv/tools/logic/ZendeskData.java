@@ -53,13 +53,14 @@ public class ZendeskData {
         return mMap.keySet().size();
     }
 
-    public List<SupportCategory> toList() {
+    public SupportCategories toList() {
         List<SupportCategory> categories = new ArrayList<>(mMap.keySet().size());
+        SupportCategories supportCategories = new SupportCategories();
         for (Long key : mMap.keySet()) {
             categories.add(mMap.get(key));
         }
-
-        return categories;
+        supportCategories.setCategories(categories);
+        return supportCategories;
 
     }
 }

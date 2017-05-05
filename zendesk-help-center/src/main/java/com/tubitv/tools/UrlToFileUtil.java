@@ -22,7 +22,7 @@ import java.io.OutputStreamWriter;
 
 public class UrlToFileUtil {
 
-    private static final String HELP_CENTER_FILE_NAME = "help_center.json";
+    private static final String HELP_CENTER_FILE_NAME = "android-faq.json";
 //    public UrlToFileUtil
 
     public static void writeToFile(String data,Activity activity) {
